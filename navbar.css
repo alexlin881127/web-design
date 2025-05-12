@@ -1,0 +1,84 @@
+.hamburger {
+    text-align: left;
+    height: 80px;
+    width: 100vw;
+    background: white;
+    border: none;
+    position: relative;
+    padding-left: 15px;
+    z-index: 1000;
+}
+
+.navbar-toggle-icon {
+    background-image: url("/hamburger_icon.svg");
+    display: inline-block; 
+    width: 40px; 
+    height: 40px;
+    padding: 20px;
+    border: 1px solid black;
+}
+
+.navbar {
+    position: relative;
+    max-height: 0;
+    overflow: hidden;
+    background: white;
+    transition: max-height 0.5s ease-in-out;
+}
+
+.navbar_container {
+    position: sticky;
+    padding-top: -10px;
+    height: auto;
+    box-shadow: 8px 8px 10px rgba(0, 0, 0, 0.1);
+    top: 0;
+    z-index: 1000;
+}
+
+.navbar_container.no-shadow {
+    box-shadow: none;
+}
+
+button:focus {
+    outline: none;
+  }
+  
+.navbar::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 100%;
+    height: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    pointer-events: none;
+}
+
+.navbar.active {
+    max-height: 500px; 
+}
+
+.navbar.active::after {
+    opacity: 1; 
+}
+
+
+.navbar ul {
+    max-width: 150px;
+    padding-left: 20px;
+    list-style: none;
+}
+
+.navbar li {
+    font-size: 20px;
+    width: 100%;
+    padding: 20px 0px;
+    box-sizing: border-box;
+    border-bottom: 1px solid #ddd;
+}
+
+.navbar li:last-child {
+    border-bottom: none;
+}

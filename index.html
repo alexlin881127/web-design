@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>個人風格網站</title>
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="navbar.css">
+</head>
+
+<body>
+    <div class="page">
+        <header>
+            <h1>Alex LIN</h1>
+            <h3>正在打拼的全端工程師</h3>
+            <div class="container_socialmedia">
+                <div class="item socialmedia fb"></div>
+                <div class="item socialmedia linkedin"></div>
+                <div class="item socialmedia github"></div>
+            </div>
+        </header>
+
+        <div class="navbar_container">
+            <button class="hamburger" aria-label="Toggle navigation">
+                <span class="navbar-toggle-icon"></span>
+            </button>
+    
+            <nav class="navbar">
+                <ul>
+                    <li><a href="#about">關於我</a></li>
+                    <li><a href="#info">個人簡介</a></li>
+                    <li><a href="#experience">過往經歷</a></li>
+                    <li><a href="#skills">技能 / 證照</a></li>
+                    <li><a href="#hobbies">興趣愛好</a></li>
+                    <li><a href="#fields">涉足領域</a></li>
+                    <li><a href="#contact">聯絡方式</a></li>
+                </ul>
+            </nav>
+        </div>
+        
+        <main class="main_container">
+            <section id="about" class="item">
+                <h2>關於我</h2>
+                <p>一段對於自己的敘述</p>
+            </section>
+        
+            <section id="info" class="item">
+                <h2>個人資訊</h2>
+                <p>生日那些</p>
+            </section>
+        
+            <section id="experience" class="item">
+                <h2>過往經歷</h2>
+                <p>展示過去做過的專案和學歷</p>
+            </section>
+        
+            <section id="skills" class="item">
+                <h2>技能</h2>
+            </section>
+        
+            <section id="hobbies" class="item">
+                <h2>興趣愛好</h2>
+            </section>
+        
+            <section id="fields" class="item">
+                <h2>涉足領域</h2>
+            </section>
+        
+            <section id="contact" class="item">
+                <h2>聯絡資訊</h2>
+            </section>
+        </main>
+
+        <footer id="footer">
+            <h2>Footer</h2>
+            <p>聯絡資訊與版權</p>
+        </footer> 
+    </div>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", () => {
+            const toggleButton = document.querySelector(".navbar-toggle-icon");
+            const navbar = document.querySelector(".navbar");
+
+            toggleButton.addEventListener("click", () => {
+                navbar.classList.toggle("active"); 
+            });
+        });
+
+    </script>
+</body>
+</html>
