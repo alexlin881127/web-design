@@ -1,0 +1,49 @@
+.main_container section {
+    padding: 50px 50px 80px 50px;
+}
+
+.main_container .container > h2 {
+    font-size: 1.8rem;
+    font-weight: bold;
+    padding-bottom: 5px;
+    margin-bottom: 15px;
+    border-bottom: 2.5px solid #FA7F08;
+    z-index: 10;
+    width: 40%;
+}
+
+.container .item *{
+    padding-top: 10px;
+}
+
+.container .item h3 {
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #12100f;
+}
+
+.container .item h3:first-child {
+    padding-top: 60px;
+}
+
+.item.aboutme > h3:first-child {
+    font-size: 1.8rem;
+    padding: 15px 0px 10px 0px;
+}
+
+.experiences.work > h3:first-child {
+    padding-top: 15px;
+}
+
+.item.experiences > p:nth-child(3){
+    padding-top: 30px;
+}
+
+.skills.ML > h3:first-child {
+    padding-top: 15px;
+}
+
+.interest.ML > h3:first-child {
+    padding-top: 15px;
+}
+

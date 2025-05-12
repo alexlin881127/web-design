@@ -11,11 +11,13 @@
 
 .navbar-toggle-icon {
     background-image: url("/hamburger_icon.svg");
+    background-position: center;
     display: inline-block; 
-    width: 40px; 
+    width: 45px; 
     height: 40px;
     padding: 20px;
-    border: 1px solid black;
+    border: 1px solid rgb(120, 118, 118, 0.5);
+    cursor: pointer;
 }
 
 .navbar {
@@ -72,13 +74,22 @@ button:focus {
 }
 
 .navbar li {
-    font-size: 20px;
+    font-size: 1.2rem;
     width: 100%;
     padding: 20px 0px;
     box-sizing: border-box;
-    border-bottom: 1px solid #ddd;
 }
 
 .navbar li:last-child {
     border-bottom: none;
+}
+
+.navbar a {
+    color: #272f31;
+    text-decoration: None;
+}
+
+.navbar a:hover {
+    font-weight: bold;
+    color: rgb(200, 69, 130);
 }
