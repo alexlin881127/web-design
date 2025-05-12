@@ -31,26 +31,34 @@
                 <ul>
                     <li><a href="#about">關於我</a></li>
                     <li><a href="#info">個人簡介</a></li>
-                    <li><a href="#experience">過往經歷</a></li>
-                    <li><a href="#skills">技能 / 證照</a></li>
+                    <li><a href="#experience">學經歷</a></li>
+                    <li><a href="#skills">技能</a></li>
                     <li><a href="#hobbies">興趣愛好</a></li>
-                    <li><a href="#fields">涉足領域</a></li>
-                    <li><a href="#contact">聯絡方式</a></li>
+                    <li><a href="#interest">涉足領域</a></li>
+                    <li><a href="#contact">聯絡資訊</a></li>
                 </ul>
             </nav>
         </div>
         
         <main class="main_container">
-            <section class="container aboutme">
-                <h2>關於我</h2>
+            <section id="about" class="container aboutme">
+                <div class="title">
+                    <div class="deco-line"></div>
+                    <h2>關於我</h2>
+                </div>
+                
                 <div class="item aboutme">
                     <h3>林暐翔 Alex LIN</h3>
                     <p>網頁設計師 / 數據分析師 / 研究者</p>
                 </div>
             </section>
                 
-            <section class="container personal-info">
-                <h2>個人資訊</h2>
+            <section id="info" class="container personal-info">
+                <div class="title">
+                    <div class="deco-line"></div>
+                    <h2>個人簡介</h2>
+                </div>
+
                 <ul class="item personal-info">
                     <li>Birthdate：1999年11月27日</li>
                     <li>Email：alexlin1127@gmail.com</li>
@@ -58,8 +66,12 @@
                 </ul>
             </section>
         
-            <section class="container experiences">
-                <h2>過往經歷</h2>
+            <section id="experience" class="container experiences">
+                <div class="title">
+                    <div class="deco-line"></div>
+                    <h2>過往經歷</h2>
+                </div>
+
                 <div class="item experiences work">
                     <h3>2024.08 - 2024.11</h3>
                     <h3>數據分析專案：大醫生技</h3>
@@ -84,12 +96,14 @@
 
                 </div>
 
-                
-
             </section>
         
-            <section class="container skills">
-                <h2>技能</h2>
+            <section id="skills" class="container skills">
+                <div class="title">
+                    <div class="deco-line"></div>
+                    <h2>技能</h2>
+                </div>
+
                 <div class="item skills ML">
                     <h3>資料分析＆機器學習</h3>
                     <ul>
@@ -119,8 +133,12 @@
                 </div>
             </section>
         
-            <section class="container hobbies">
-                <h2>興趣愛好</h2>
+            <section id="hobbies" class="container hobbies">
+                <div class="title">
+                    <div class="deco-line"></div>
+                    <h2>興趣愛好</h2>
+                </div>
+
                 <div class="item hobbies">
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta sunt inventore vitae rem illo! Atque maxime officiis similique in iure?
                     </p>
@@ -128,8 +146,12 @@
 
             </section>
         
-            <section class="container interest">
-                <h2>涉足領域</h2>
+            <section id="interest" class="container interest">
+                <div class="title">
+                    <div class="deco-line"></div>
+                    <h2>涉足領域</h2> 
+                </div>
+
                 <div class="item interest ML">
                     <h3>📊 機器學習與人工智慧應用：</h3>
                     <p>=> 模型訓練、特徵工程、資料前處理</p>
@@ -151,10 +173,14 @@
                 </div>
             </section>
         
-            <section class="container contact">
-                <h2>聯絡資訊</h2>
+            <section id="contact" class="container contact">
+                <div class="title">
+                    <div class="deco-line"></div>
+                    <h2>聯絡資訊</h2>
+                </div>
+
                 <div class="item contact">
-                    <p>若您對我的經歷或專案有興趣，歡迎聯繫我一同討論：</p>
+                    <p>若對我的經歷或專案感興趣，歡迎聯絡我：</p>
                     <p>📧 Email：alexlin1127@gmail.com</p>
                 </div>
             </section>
@@ -167,11 +193,39 @@
 
     <script>
         document.addEventListener("DOMContentLoaded", () => {
+
+            if (window.location.hash) {
+                history.replaceState(null, null, ' ');
+            }
+            
             const toggleButton = document.querySelector(".navbar-toggle-icon");
             const navbar = document.querySelector(".navbar");
-
+    
             toggleButton.addEventListener("click", () => {
                 navbar.classList.toggle("active"); 
+            });
+    
+            navbar.classList.remove("active");
+            const links = document.querySelectorAll(".navbar a");
+
+            links.forEach(link => {
+                link.addEventListener("click", (event) => {
+                    event.preventDefault(); 
+                    const targetId = link.getAttribute("href").substring(1); 
+                    const targetElement = document.getElementById(targetId); 
+
+                    if (targetElement) {
+                        const navbarHeight = document.querySelector(".navbar_container").offsetHeight; 
+                        const elementPosition = targetElement.getBoundingClientRect().top + window.pageYOffset;
+                        const offsetPosition = elementPosition - navbarHeight; 
+
+                        window.scrollTo({
+                            top: offsetPosition,
+                            behavior: "smooth"
+                        });
+                    }
+                    navbar.classList.remove("active"); 
+                });
             });
         });
 
