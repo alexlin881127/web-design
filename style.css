@@ -51,9 +51,8 @@ header > h1 {
 
 header > h3 {
     font-size: 1.5rem;
-    padding-top: 20px;
-    text-align: left;
-    padding-left: 30px;    
+    padding: 20px 0px 0px 30px;
+    text-align: left;    
 }
 
 .container.socialmedia {
@@ -68,6 +67,24 @@ div.socialmedia .item {
     background-size: cover; 
     margin-right: 10px;
     display: inline-block; 
+}
+
+#typing-effect {
+    font-size: 1.5rem;
+    white-space: nowrap;
+    overflow: hidden;
+    border-right: 5px solid #000;
+    display: inline-block;
+    animation: blink 0.5s step(30, end) infinite alternate;
+}
+
+@keyframes blink {
+    from {
+        border-color: transparent;
+    }
+    to {
+        border-color: black;
+    }
 }
 
 .item.fb {

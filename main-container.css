@@ -6,6 +6,9 @@
     display: flex;
 }
 
+.content {
+    padding: 10px 0px 0px 15px;
+}
 .deco-line {
     display: block;
     border-left: 5px solid #FA7F08;
@@ -19,17 +22,17 @@
     width: 40%;
 }
 
-.container .item *{
+.content .item *{
     padding-top: 10px;
 }
 
-.container .item h3 {
+.content .item h3 {
     font-size: 1.2rem;
     font-weight: bold;
     color: #12100f;
 }
 
-.container .item h3:first-child {
+.content .item h3:first-child {
     padding-top: 60px;
 }
 
@@ -38,15 +41,13 @@
     padding: 15px 0px 10px 0px;
 }
 
-.item.aboutme, .item.myinfo {
-    padding: 20px 0px 0px 15px
-}
+
 
 .item.myinfo li {
     padding-bottom: 10px;
 }
 
-#experience > .item.experiences {
+.content > .item.experiences {
     display: flex;
 }
 
@@ -63,12 +64,12 @@
     margin: 20px 10px 20px 10px;
 }
 
-#experience > h3 {
+.content > h3 {
     font-size: 1.5rem;
     padding: 0px
 }
 
-#experience > h3:nth-child(2) {
+.content > h3:first-child {
     padding-top: 30px;
 }
 
