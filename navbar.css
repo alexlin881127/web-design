@@ -10,7 +10,7 @@
 }
 
 .navbar-toggle-icon {
-    background-image: url("/hamburger_icon.svg");
+    background-image: url("/icon/hamburger_icon.svg");
     background-position: center;
     display: inline-block; 
     width: 45px; 

@@ -88,15 +88,15 @@ div.socialmedia .item {
 }
 
 .item.fb {
-    background-image: url('/fb_icon.svg');
+    background-image: url('/icon/fb_icon.svg');
 }
 
 .item.linkedin {
-   background-image: url('/Linkedin_icon.png');
+   background-image: url('/icon/Linkedin_icon.png');
 }
 
 .item.github {
-    background-image: url('/GitHub_icon.png');
+    background-image: url('/icon/GitHub_icon.png');
 }
 
 footer {
