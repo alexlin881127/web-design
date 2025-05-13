@@ -1,5 +1,5 @@
 .main_container section {
-    padding: 50px 50px 80px 50px;
+    padding: 50px 30px 65px 30px;
 }
 
 .title {
@@ -9,6 +9,7 @@
 .content {
     padding: 10px 0px 0px 15px;
 }
+
 .deco-line {
     display: block;
     border-left: 5px solid #FA7F08;
@@ -19,7 +20,7 @@
     font-size: 1.8rem;
     font-weight: bold;
     z-index: 10;
-    width: 40%;
+    width: 50%;
 }
 
 .content .item *{
@@ -36,22 +37,42 @@
     padding-top: 60px;
 }
 
+.content > h3 {
+    font-size: 1.5rem;
+    padding: 0px;
+}
+
+.content > h3:first-child {
+    padding-top: 30px;
+}
+
+
+
+/* aboutme area */
 .item.aboutme > h3:first-child {
     font-size: 1.8rem;
     padding: 15px 0px 10px 0px;
 }
 
 
-
-.item.myinfo li {
-    padding-bottom: 10px;
+/* myinfo area */
+.content .item.myinfo {
+    list-style-type: disc;
+    padding-left: 20px;
+    padding-top: 15px;
 }
 
+.item.myinfo li {
+    padding-bottom: 20px;
+}
+
+
+/* experience area*/
 .content > .item.experiences {
     display: flex;
 }
 
-.item.experiences.work, .item.experiences.school {
+.item.experience.work, .item.experience.school {
     padding: 30px 0px 30px 10px;
 }
 
@@ -64,20 +85,93 @@
     margin: 20px 10px 20px 10px;
 }
 
-.content > h3 {
-    font-size: 1.5rem;
-    padding: 0px
+
+/* skills area */
+.item.skills {
+    display: flex;
+    flex-direction: column;
+    width: 270px;
+    margin: 15px 0px 80px 12px;
 }
 
-.content > h3:first-child {
-    padding-top: 30px;
+.skill.icon-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 0px;
 }
 
-.skills.ML > h3:first-child {
-    padding-top: 15px;
+#skills .skill-icon {
+    height: 80px;
+    width: 80px;
+    padding: 0px;
+    margin-top: 20px;
+    margin-right: 10px;
+    background-size: cover;
+    background-position: center;
 }
 
-.interest.ML > h3:first-child {
-    padding-top: 15px;
+.skill-icon.python {
+    background-image: url(/python.png);
+}
+
+.skill-icon.mysql {
+    background-image: url(/mysql.png);
+}
+
+.skill-icon.powerbi {
+    background-image: url(/powerbi.png);
+}
+
+.skill-icon.pytorch {
+    background-image: url(/pytorch.jpeg);
+}
+
+.skill-icon.LLM {
+    background-image: url(/llm.jpg);
+}
+
+.skill-icon.NLP {
+    background-image: url(/nlp.png);
+}
+
+.skill-icon.html {
+    background-image: url(/html.png);
+}
+
+.skill-icon.css {
+    background-image: url(/css.png);
+}
+
+.skill-icon.js {
+    background-image: url(/javascript.png);
+}
+
+.skill-icon.bootstrap {
+    background-image: url(/bootstrap.png);
+}
+
+.skill-icon.linux {
+    background-image: url(/linux.png);
+}
+
+.skill-icon.git {
+    background-image: url(/git.png);
+}
+
+.skill-icon.github {
+    background-image: url(/github.png);
+}
+
+.skill-icon.jp-nb {
+    background-image: url(/jupyter-nb.png);
+}
+
+.skill-icon.vscode {
+    background-image: url(/vscode.png);
+}
+
+.skill-icon.bash-sh {
+    background-image: url(/bash-sh.jpg);
 }
 
