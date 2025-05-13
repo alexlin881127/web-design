@@ -1,0 +1,79 @@
+/* aboutme area */
+.web-designer {
+    background-image: url(/icon/web-design.png);
+}
+
+.data-analyst {
+    background-image: url(/icon/da.png);
+}
+
+.tech-guy {
+    background-image: url(/icon/tech-guy.png);
+}
+
+
+/* skill area */
+.skill-icon.python {
+    background-image: url(/icon/python.png);
+}
+
+.skill-icon.mysql {
+    background-image: url(/icon/mysql.png);
+}
+
+.skill-icon.powerbi {
+    background-image: url(/icon/powerbi.png);
+}
+
+.skill-icon.pytorch {
+    background-image: url(/icon/pytorch.jpeg);
+}
+
+.skill-icon.LLM {
+    background-image: url(/icon/llm.jpg);
+}
+
+.skill-icon.NLP {
+    background-image: url(/icon/nlp.png);
+}
+
+.skill-icon.html {
+    background-image: url(/icon/html.png);
+}
+
+.skill-icon.css {
+    background-image: url(/icon/css.png);
+}
+
+.skill-icon.js {
+    background-image: url(/icon/javascript.png);
+}
+
+.skill-icon.bootstrap {
+    background-image: url(/icon/bootstrap.png);
+}
+
+.skill-icon.linux {
+    background-image: url(/icon/linux.png);
+}
+
+.skill-icon.git {
+    background-image: url(/icon/git.png);
+}
+
+.skill-icon.github {
+    background-image: url(/icon/github.png);
+}
+
+.skill-icon.jp-nb {
+    background-image: url(/icon/jupyter-nb.png);
+}
+
+.skill-icon.vscode {
+    background-image: url(/icon/vscode.png);
+}
+
+.skill-icon.bash-sh {
+    background-image: url(/icon/bash-sh.jpg);
+}
+

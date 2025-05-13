@@ -1,5 +1,5 @@
 .main_container section {
-    padding: 20% 8% 30% 8%;
+    padding: 20% 8% 20% 8%;
 }
 
 .title {
@@ -49,21 +49,42 @@
 
 
 /* aboutme area */
-.item.aboutme > h3:first-child {
+.item.aboutme h3:first-child {
     font-size: 1.8rem;
     padding: 15px 0px 10px 0px;
 }
 
+.icon.aboutme {
+    display: flex;
+    justify-content: space-around;
+    padding: 10% 0% 20% 0%;
+}
+
+.icon-container.aboutme {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#aboutme .icon-item {
+    height: 80px;
+    width: 80px;
+    background-size: cover;
+    background-position: center;
+    border-radius: 20%;
+}
+
 
 /* myinfo area */
+
 .content .item.myinfo {
     list-style-type: disc;
-    padding-left: 20px;
-    padding-top: 15px;
+    padding-left: 6%;
+    padding-top: 10%;
 }
 
 .item.myinfo li {
-    padding-bottom: 20px;
+    padding-bottom: 10%;
 }
 
 
